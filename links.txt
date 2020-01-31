@@ -1,0 +1,26 @@
+Tema 1
+- https://www.programming9.com/programs/c-programs/285-page-replacement-programs-in-c
+- https://cprogrammingguide.wordpress.com/2012/07/10/simulation-of-page-replacement-algorithms-fifo-lru-optimal/
+- https://www.thecrazyprogrammer.com/2016/11/optimal-page-replacement-algorithm-c.html
+- https://www.thecrazyprogrammer.com/2016/11/lru-page-replacement-algorithm-c.html
+
+- https://www.codingalpha.com/fifo-page-replacement-algorithm-c-program/
+- https://www.codingalpha.com/lru-page-replacement-algorithm-c-program/
+- https://www.codingalpha.com/optimal-page-replacement-algorithm-c-program/
+
+(leer fichero)
+- https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=937:leer-recuperar-extraer-datos-de-ficheros-o-archivos-en-c-fgetc-getc-fgets-fscanf-ejercicio-resuelto-cu00538f&catid=82&Itemid=210
+- https://blog.openalfa.com/como-leer-un-fichero-linea-a-linea-en-lenguaje-c
+
+- https://github.com/rachgoldstein/page-replacement-simulation/blob/master/lru.c
+- https://github.com/rachgoldstein/page-replacement-simulation/blob/master/fifo.c
+
+(Formulas)
+- https://stackoverflow.com/questions/16323890/calculating-page-table-size
+- https://stackoverflow.com/questions/7910240/how-to-calculate-page-table-size
+- https://www.javatpoint.com/os-page-table-size
+0021258073
+Tema 2
+- https://github.com/nishadi/linked-list-implemetation/blob/master/mutex_linked_list.c
+- https://medium.com/@technospace/parallel-program-with-one-mutex-for-the-entire-linked-list-based-on-pthreads-c1ab7eda975a
+- https://github.com/sudaraka94/linked-list-impl/blob/master/linkedlist.c
