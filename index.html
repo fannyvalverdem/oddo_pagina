@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <title>Ficha de evaluación del empleado</title>
+  
+  <!--bootstrap-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--bootstrap-->
+
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/jquery.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="static/js/progreso_circular.js"></script>
+  <script src="static/js/grafico_lineal.js"></script>
+  <script src="static/js/jquery.knob.js"></script>
+
+  <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  <script type="text/javascript">
+    FusionCharts.ready(function(){
+      var chartObj = new FusionCharts({
+      type: 'radar',
+      renderAt: 'chart-container',
+      width: '600',
+      height: '250',
+      dataFormat: 'json',
+      dataSource: {
+          "chart": {
+              "caption": "",
+              "subCaption": "",
+              "numberPreffix": "",
+              "theme": "fusion",
+              "radarfillcolor": "#ffffff",
+          },
+          "categories": [{
+              "category": [{
+                  "label": "Competencia # 1"
+              }, {
+                  "label": "Competencia # 2"
+              }, {
+                  "label": "Competencia # 3"
+              }, {
+                  "label": "Competencia # 4"
+              }, {
+                  "label": "Competencia # 5"
+              }]
+          }],
+          "dataset": [{
+              "seriesname": "User Ratings",
+              "data": [{
+                  "value": "3.5"
+              }, {
+                  "value": "4.8"
+              }, {
+                  "value": "3.1"
+              }, {
+                  "value": "4.0"
+              }, {
+                  "value": "3.6"
+              }]
+            }]
+          }
+        }
+      );
+      chartObj.render();
+    });
+  </script>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <section>
+          <div id="pintar" class="col-12">
+            <br><br><br><br><br>
+            
+            <div id="pintar2" class="col-12">
+              <div class="col-12">
+                <img id="foto_pfil" src="static/img/joven3.jpg" alt="Joven">
+                
+                <div id="parriba">
+                  <div class="col-12">
+                    <div id="texto0" class="col-12">
+                      <br>
+                      <div id="nombre">Joel Juan Villamar Rodriguez</div>
+                      <div>Area Creativa</div>
+                      <hr/>
+                      <div>Fecha de ingreso: 10/01/2017</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+              <div id="parriba2">
+                <div id="bordesdiv" class="col-12">
+                  <div id="texto1" class="col-12">
+                    <br>
+                    <div>Porcentaje</div>
+                    <div id="potencial">Potencial</div>
+                    <hr/>
+                    <input type="text" value="85.60" class="dial">
+                    <br><br>
+                  </div>
+                </div>
+                <br>
+                <div id="bordesdiv" class="col-12">
+                  <div id="texto2" class="col-12">
+                    <br>
+                    <div>Porcentaje</div>
+                    <div id="desempeno">Desempeño</div>
+                    <hr/>
+                    <input type="text" value="65.5" class="dial2">
+                    <br><br>
+                  </div>
+                </div>
+                <br>
+                <div id="bordesdiv" class="col-12">
+                  <div class="col-12">
+                    <br>
+                    <h5 id="high_potencial">High Potencial</h5>
+                    <hr/>
+                    <nav>
+                      <ul>
+                        <li id="chck">Facilmente aprende nuevas tecnolofias y funciones.</li>
+                        <li id="chck">Astuto en la resolucion de problemas.</li>
+                        <li id="chck">Cambia comportamientos/ condiciones diferentes.</li>
+                        <li id="chck">Baja tolerancia a procesos o gente limitada.</li>
+                        <li id="chck">Altamente curioso (tiene intereses amplios).</li>
+                        <li id="chck">Maneja bien la complejidad/ambiguedad.</li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <br>
+                </div>
+              </div>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="body_parte" class="col-8">
+        <div class="col-12">
+          <br>
+          <div class="row">
+
+            <div class="col-8"><h5 id="icon0">FICHA DE EVALUACIÓN DEL EMPLEADO<h5></div>
+            <div class="col-3"><h5>23/01/2019<h5></div>
+          </div>
+        </div>
+        <br>
+        <div class="col-12">
+          <div class="col-12">
+            <h5 id="icon1">Resultados de la Evaluación     
+            <button id="bordeliderpotencial" type="button" class="btn btn-success">Lider potencial</button>
+
+            </h5>
+            
+
+            <nav>
+              <ul>
+                <li>Produce muy buenos resultados.</li>
+                <li>Excelente en una o dos áreas.</li>
+                <li>Mejora continuamente sus skills y su adaptabilidad.</li>
+              </ul>
+            </nav>
+          </div>
+          <br>
+          <div class="col-12">
+            <h5 id="icon2">Recomendación</h5>
+            <nav>
+              <ul>
+                <li>Promocionarle a muchas funciones técnicas o alguna función directiva.</li>
+              </ul>
+            </nav>
+          </div>
+          <br>
+          <div class="col-12">
+            <h5 id="icon3">Acciones sobre el Empleado</h5>
+            <nav>
+              <ul>
+                <li>Recomendar/Asignar acciones controladas e incorporar paulatinamente tareas de mayor responsabilidad y/o comlejidad.</li>
+                <li>Movilidades y ascensos.</li>
+                <li>Capacitación conductual y especializada.</li>
+                <li>Mantener un monitoreo y feedback cercanos.</li>
+                <li>Motivar/Brindar conocimientos.</li>
+              </ul>
+            </nav>
+          </div>
+          <br>
+          <div class="col-12">
+            <h5 id="icon4">Movimientos de crecimiento </h5>
+            <nav>
+              <ul>
+                <li>Mover a Líder futuro.</li>
+                <li>Mover a Líder en crecimiento</li>
+              </ul>
+            </nav>
+          </div>
+          <br>
+          <div class="col-12">
+            <h5 id="icon5">Competencias del potencial </h5>
+            <div class="col-12">
+              <div id="chart-container">FusionCharts XT will load here!</div>
+            </div>
+          </div>
+          <br><br>
+          <div class="col-12">
+            <h5 id="icon6">Historico comparativo </h5>
+            <br>
+            <div class="col-12">
+              <div id="chartContainer" style="height: 200px; width: 100%;"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
